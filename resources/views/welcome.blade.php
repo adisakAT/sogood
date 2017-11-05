@@ -79,7 +79,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel TT
+                    WELCOME{{$text}}
+                    <ul>
+                        @foreach($friends as $friend)
+                            <li>{{$friend}}</li>
+                        @endforeach
+                    </ul>
                 </div>
 
                 <div class="links">
